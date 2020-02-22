@@ -1,14 +1,14 @@
 
 class DeveloperDecorator implements IDeveloper {
 
-    private IDeveloper decorated;
+    private IDeveloper developer;
 
-    public DeveloperDecorator(IDeveloper decorated) {
-        this.decorated = decorated;
+    public DeveloperDecorator(IDeveloper developer) {
+        this.developer = developer;
     }
 
     @Override
     public String working() {
-        return decorated.working();
+        return developer.working();
     }
 }
